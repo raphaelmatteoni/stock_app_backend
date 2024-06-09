@@ -1,4 +1,6 @@
 class StocksController < ApplicationController
+  include ErrorHandlingConcern
+
   def index
     data = External::StockService.fetch_data(
       ticker: params[:ticker],
