@@ -1,5 +1,5 @@
-module Stock
-  class MetricCalculator
+module Business
+  class StockMetricCalculator
     def self.calculate(data)
       number_of_days = data["resultsCount"]
       results = data["results"]
