@@ -27,7 +27,7 @@ This will execute all unit and integration tests defined in the project.
 ## Consuming the API
 To consume the API and obtain stock metrics, make a GET request to the /stocks endpoint with the parameters ticker, start_date, and end_date. For example:
 
-[http://localhost:3000/stocks?ticker=AAPL&start_date=2023-01-01&end_date=2023-12-31]
+- GET http://localhost:3000/stocks?ticker=AAPL&start_date=2023-01-01&end_date=2023-12-31
 
 This request will return a JSON object with the calculated metrics for the AAPL ticker within the specified period, similar to:
 
