@@ -15,7 +15,7 @@ module Business
       number_of_days = data["resultsCount"]
       results = data["results"]
 
-      return {} unless number_of_days.positive?
+      return {} unless number_of_days && number_of_days.positive?
 
       {
         ticker: data["ticker"],
